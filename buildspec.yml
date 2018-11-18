@@ -3,6 +3,9 @@ version: 0.1
 phases:
   install:
     commands:
+      - apt-get install locales
+      - locale-gen en_US.UTF-8
+      - localedef -i en_US -f UTF-8 en_US.UTF-8
       - echo 'export LC_ALL="en_US.UTF-8"' >> ~/.bashrc
       - echo 'export LANG="en_US.UTF-8"' >> ~/.bashrc
       - . ~/.bashrc
@@ -12,6 +15,6 @@ phases:
       - echo "*************** Install Required gems ***************"
       - bundle install
       - echo "*************** Building Jekyll Site ***************"
-      - bundle exec jekyll build
+      - LANG="en_US.UTF-8" LC_ALL="en_US.UTF-8" bundle exec jekyll build
       - echo "******** Uploading to S3 ********"
       - aws s3 sync _site/ s3://www.thecambridgedesign.co.uk
