@@ -3,6 +3,7 @@ version: 0.1
 phases:
   install:
     commands:
+      - apt install nodejs
       - gem install jekyll jekyll-paginate jekyll-sitemap jekyll-gist execjs therubyracer
   build:
     commands:
