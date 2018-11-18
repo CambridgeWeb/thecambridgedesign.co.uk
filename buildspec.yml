@@ -3,6 +3,9 @@ version: 0.1
 phases:
   install:
     commands:
+      - echo 'export LC_ALL="en_US.UTF-8"' >> ~/.bashrc
+      - echo 'export LANG="en_US.UTF-8"' >> ~/.bashrc
+      - . ~/.bashrc
       - gem install jekyll jekyll-paginate jekyll-sitemap jekyll-gist execjs therubyracer
   build:
     commands:
