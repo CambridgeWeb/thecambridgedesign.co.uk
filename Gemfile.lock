@@ -209,6 +209,7 @@ GEM
       html-pipeline (~> 2.2)
       jekyll (~> 3.0)
     kramdown (1.17.0)
+    libv8 (3.16.14.19-x86_64-linux)
     liquid (4.0.0)
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -234,6 +235,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
+    ref (2.0.0)
     rouge (2.2.1)
     ruby-enum (0.7.2)
       i18n
@@ -253,6 +255,9 @@ GEM
       rack (> 1, < 3)
     terminal-table (1.8.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
+    therubyracer (0.12.3)
+      libv8 (~> 3.16.14.15)
+      ref
     thread_safe (0.3.6)
     typhoeus (1.3.1)
       ethon (>= 0.9.0)
@@ -268,6 +273,7 @@ DEPENDENCIES
   bootstrap (~> 4.0.0.alpha3)
   github-pages
   jekyll-assets
+  therubyracer
 
 RUBY VERSION
    ruby 2.4.2p198
