@@ -4,23 +4,62 @@
   {% assign full_base_url = custom_url %}
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="#">The Cambridge Design</a>
+    <button class="navbar-toggler" 
+    type="button" data-toggle="collapse"
+     data-target="#navbarNav" aria-controls="navbarNav" 
+     aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Mobile
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="/mobile/hybrid-app-development/">Hybrid App Development</a>
+            <a class="dropdown-item" href="/mobile/ios-app-development/">iOS App Development</a>
+            <a class="dropdown-item" href="/mobile/android-app-development/">Android App Development</a>
+            <a class="dropdown-item" href="/mobile/azure-aws-deployment/">Azure/AWS Deployment</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Web
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="/web/design/">Website Design</a>
+            <a class="dropdown-item" href="/web/static-websites/">Static Website Development</a>
+            <a class="dropdown-item" href="/web/wordpress-customization/">WordPress Customization</a>
+            <a class="dropdown-item" href="/web/asp-net-web-development/">ASP.net Web Development</a>
+            <a class="dropdown-item" href="/web/azure-aws-deployment/">Azure/AWS Deployment</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Graphics
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="/graphics/digital-graphic-design/">Digital Graphic Design</a>
+            <a class="dropdown-item" href="/graphics/illustration/">Illustration</a>
+            <a class="dropdown-item" href="/graphics/adobe-photoshop/">Adobe Photoshop</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Marketing
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="/technical-marketing/google-analytics/">Google Analytics</a>
+            <a class="dropdown-item" href="/technical-marketing/python-scripting/">Python Scripting</a>
+            <a class="dropdown-item" href="/technical-marketing/lead-generation/">Lead Generation</a>
+            <a class="dropdown-item" href="/technical-marketing/manual-task-automation/">Manual Task Automation</a>
+            <a class="dropdown-item" href="/technical-marketing/social-media-services/">Social Media Services</a>
+          </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+          <a class="nav-link" href="/contact/">Contact Us</a>
         </li>
       </ul>
     </div>

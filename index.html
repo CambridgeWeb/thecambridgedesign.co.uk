@@ -1,23 +1,37 @@
 ---
 layout: default
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="content-container">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Making your designs a reality.</h1>
+        <p class="lead">Web & Mobile design and development team based in Cambridge, UK.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+            <div class="home">
+              <h1 class="page-heading">Sorry!</h1>
+              <p>
+                Our site is being developed right now - please check back shortly.
+              </p>
+              <!-- <ul class="post-list">
+                {% for post in site.posts %}
+                  <li>
+                    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            
+                    <h2>
+                      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+                    </h2>
+                  </li>
+                {% endfor %}
+              </ul> -->
+              <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
+            </div>
+        </div>
+      </div>
+    </div>
 </div>
+
+
