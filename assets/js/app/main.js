@@ -6,3 +6,9 @@ $(window).scroll(function() {
     }
 });
 $(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:0},"1000");return false})})
+$(document).ready(function(){
+    $('.carousel.home').carousel({
+        interval: 2000,
+        pause: "hover"
+    });
+});
