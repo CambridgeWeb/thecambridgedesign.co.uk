@@ -10,5 +10,5 @@ $(document).ready(function(){
     $('.carousel.home').carousel({
         interval: 2000,
         pause: "hover"
-    });
+    }); 
 });
