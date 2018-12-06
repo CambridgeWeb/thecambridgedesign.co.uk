@@ -162,9 +162,11 @@ transform: rotate(0);
 .bg-dark{
     background-color: $gray-900 !important; 
 }
+.bg-up {
+    background-position-y: -300px !important;
+}
 .row.jumbotron.jumbotron-fluid {
     background-position-x: center !important;
-    background-position-y: -300px !important;
     background-attachment: fixed !important;
     background-size: cover !important;
     margin-bottom: 0px;
