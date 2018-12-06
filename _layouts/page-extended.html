@@ -14,7 +14,7 @@ layout: default
 {% if page.details.blocks %}
 <div class="row p-t-30">
     <div class="container text-center">
-        <h2>{{page.details.blocks.title}}</h2>
+        <h2 class="title">{{page.details.blocks.title}}</h2>
     </div>
 </div>
 <div class="row usp-block">
@@ -42,7 +42,7 @@ layout: default
 {% if page.details.tech %}
 <div class="row">
     <div class="container text-center">
-        <h2>{{page.details.tech.title}}</h2>
+        <h2 class="title">{{page.details.tech.title}}</h2>
     </div>
 </div>
 <div class="row tech-block">
@@ -70,10 +70,10 @@ layout: default
 {% if page.details.portfolio %}
 <div class="row">
     <div class="container text-center">
-        <h2>{{page.details.portfolio.title}}</h2>
+        <h2 class="title">{{page.details.portfolio.title}}</h2>
     </div>
 </div>
-<div class="row portfolio-block">
+<div class="row portfolio-block p-t-30">
     {% for col in page.details.portfolio.cols %}
         {% if col.image %}
             <div class="col-sm-4 bg-image-col no-padding text-center responsive-text-small ">
